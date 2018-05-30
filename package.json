@@ -1,28 +1,31 @@
 {
-  "name": "d3-foo",
+  "name": "d3-arclabels",
   "version": "0.0.1",
-  "description": "{DESCRIPTION}",
+  "description": "An arc generator for pie and donut charts that creates a single arc with an id in the middle of the arc segment suitable for attaching a label to.",
   "keywords": [
     "d3",
     "d3-module"
   ],
   "license": "BSD-3-Clause",
-  "main": "build/d3-foo.js",
+  "main": "build/d3-arclabels.js",
   "jsnext:main": "index",
-  "homepage": "https://github.com/{USERNAME}/d3-foo",
+  "homepage": "https://github.com/mmealling/d3-arclabels",
   "repository": {
     "type": "git",
-    "url": "https://github.com/{USERNAME}/d3-foo.git"
+    "url": "https://github.com/mmealling/d3-arclabels.git"
   },
   "scripts": {
-    "pretest": "rm -rf build && mkdir build && rollup -f umd -n d3 -o build/d3-foo.js -- index.js",
+    "pretest": "rm -rf build && mkdir build && rollup -f -g umd -n d3 -o build/d3-arclabels.js -- index.js",
     "test": "tape 'test/**/*-test.js'",
-    "prepublish": "npm run test && uglifyjs build/d3-foo.js -c -m -o build/d3-foo.min.js",
-    "postpublish": "zip -j build/d3-foo.zip -- LICENSE README.md build/d3-foo.js build/d3-foo.min.js"
+    "prepublish": "npm run test && uglifyjs build/d3-arclabels.js -c -m -o build/d3-arclabels.min.js",
+    "postpublish": "zip -j build/d3-arclabels.zip -- LICENSE README.md build/d3-arclabels.js build/d3-arclabels.min.js"
   },
   "devDependencies": {
     "rollup": "0.27",
     "tape": "4",
     "uglify-js": "2"
+  },
+  "dependencies": {
+    "d3-path": "^1.0.5"
   }
 }

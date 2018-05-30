@@ -1,10 +1,15 @@
-# d3-foo
+# d3-arclabels
 
-YOUR DESCRIPTION HERE. Replace all instances of `foo` in this file with the name of your new plugin.
+This D3 4.0 plugin is used with pie and donut charts to create an additional path which
+contains a single arc in the middle of the segment. This path contains an ID that can be
+used in a text-path statement to bind some text to the arc. It is up to the user to ensure
+that the text fits on the arc. If the data contains a 'cw' value it is used to indicate
+whether the path is clockwise or counterclockwise. This is used to 'flip' the text so that
+it is readable at the bottom of a chart. 
 
 ## Installing
 
-If you use NPM, `npm install d3-foo`. Otherwise, download the [latest release](https://github.com/d3/d3-foo/releases/latest).
+If you use NPM, `npm install d3-arclabels`. Otherwise, download the [latest release](https://github.com/mmealling/d3-arclabels/releases/latest).
 
 ## API Reference
 

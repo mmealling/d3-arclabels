@@ -1,1 +1,1 @@
-export {default as foo} from "./src/foo";
+export {default as arclabel} from "./src/arclabel";
